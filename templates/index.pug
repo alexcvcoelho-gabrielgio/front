@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        title IoT
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1")
+        link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet" type="text/css" href="static/css/index.css")
+    body
+        nav.navbar.navbar-default
+            div.container-fluid
+                div.navbar-header
+                    a.navbar-brand TCC
+        div.panel-body
+            div.row
+                div.col-md-6
+                    h3 Formulario de sessao
+                    div.form-group
+                        input#brand.form-control(type="text" placeholder="Marca")
+                    div.form-group
+                        input.form-control(type="text" id="model" placeholder="Modelo")
+                    div.form-group
+                        input.form-control(type="text" id="hd-id" placeholder="Identificacao")
+                    button.btn.btn-default(onclick="clickSubmit()") Enviar
+                div.col-md-6
+                    h3 Inicie uma Sessao
+                    h4#session
+                    h4#brand-lbl
+                    h4#model-lbl
+                    h4#hd-id-lbl
+                    div.loader#loader
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript")
+    script(src="static/js/index.js" type="text/javascript")
